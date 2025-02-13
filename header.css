@@ -1,0 +1,22 @@
+/* header-section */
+.header{
+    background-color: var(--body-color);
+    height: 38px;
+    position: relative;
+   p{
+        width: 100%;
+        color: var( --secondary-color);
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        line-height: 38px;
+        word-break: break-all;
+    }
+    .header__icon{
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+        line-height: 14px;
+        height: 5vh;
+        cursor: pointer;
+    }
+}

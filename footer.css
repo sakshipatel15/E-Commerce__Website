@@ -1,0 +1,81 @@
+/* footer__section */
+.footer__section{
+    position: relative;
+    margin-top: 170.42px;
+    height: fit-content;
+    padding-top: 140px;
+    background-color: var(--accent-color);
+    .footer__content{
+        margin-top: 50px ;
+    }
+    .footer__info{
+        margin-top: 25px;
+    }
+    .footer__icons{
+        margin-top: 35px;
+        gap: 14px;
+        
+        ion-icon{
+            font-size: 1.4rem;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #twitter,#instagram,#github{
+            background-color: var(--secondary-color);
+            border: 1px solid var(--primary-text-color);
+            color: var(--body-color
+            );
+        }
+        #facebook{
+            background-color: var(--body-color);
+            color: var(--secondary-color);
+        }
+    }
+    .horizontal-line{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .sub-footer{
+        margin-bottom: 88px;
+        p{
+            margin-top: 25px;
+        }
+        .sub-footer__icons{
+            gap: 12px !important;
+            flex-wrap: wrap;
+            flex-direction: row !important;
+            .sub-footer-img{
+                background-color:var(--secondary-color);
+                border-radius: 6px;
+                height: 30px;
+                width: 47px;
+                img{
+                    width: 32px;
+                    height: 10px;
+                }
+            }
+        }
+        
+    }
+    .footer__link__section{
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--body-color);
+            letter-spacing: 3px;
+        }
+    }
+    .footer__links {
+        margin-top: 26px; 
+        gap: 23px;
+        a{
+            text-decoration: none !important;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--primary-text-color);
+        }
+        
+    }
+}
+

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="theme/utility.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media3.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="theme/header.css">
+    <link rel="stylesheet" href="theme/navbar.css">
+    <link rel="stylesheet" href="theme/user.css">
+    <link rel="stylesheet" href="theme/footer.css">
+    <title>E-commerce website (casual)</title>
+</head>
+
+<body id="cancle" >
+    <div class="figma">
+        <!------------------ header -------------------->
+        <div class="row header flex-row col-lg-12 col-sm-12 g-0">
+            <div class="fm-container d-flex">
+                <p>Sign up and get 20% off to your first. <span class="text-decoration-underline"
+                        style="cursor: pointer;">Sign up
+                        now</span></p>
+                <a href="#"><ion-icon name="close" class="header__icon " style="cursor: pointer;"></ion-icon></a>
+            </div>
+        </div>
+
+        <!----------------------- navbar------------- -->
+        <div class="fm-navbar  row  g-0 flex col-lg-12">
+            <div class="fm-container flex">
+                <a href="#" id="togglebutton" class="toggle-btn flex "><ion-icon name="menu"></ion-icon></a>
+                <div class="website__logo">
+                    <a href="index.html"><p>SHOP.CO </p></a>
+                    
+                </div>
+                <ul class="nav__links flex flex__row my-auto" id="navlinks">
+                    <li><a href="#" class="toggle__cross__icon"> <ion-icon name="close-outline"></ion-icon></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index2.html">Men</a></li>
+                                <li><a class="dropdown-item" href="index3.html">Casual</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                    
+                </ul>
+                <div class="nav__searchbox flex ms-3 ">
+                    <ion-icon name="search" class="nav__search_icon"></ion-icon>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <div class="nav__icons flex ms-auto">
+                    <ion-icon name="search" class="nav__search"></ion-icon>
+                    <a href="index4.html">
+                        <ion-icon name="cart-outline"> </ion-icon>
+                    </a>
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+        <div class="fm-container">
+            <div class="horizontalline"></div>
+        </div>
+
+        <div class="breadcrumb d-flex fm-container">
+            <p class="text-start">Home ></p>
+            <span>Casual</span>
+        </div>
+        <section class="main__section d-flex fm-container">
+            
+            <!-- --------------------filter-section----------------- -->
+            <section class="filter__section  d-flex flex-column" id="filter__sec">
+                <!-- filter-header -->
+                <div class="filter__header d-flex flex-row  justify-content-between align-items-center">
+                    <h1 class="filter__heading__text">Filters</h1>
+                    <div class="filter-img">
+                        <img src="images/Vector (2).svg" alt="">
+                    </div>
+                    <div class="filter__cross__icon d-flex justify-content-center align-items-center" id="cross">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="horizontalline m-24"></div>
+                <!-- filter-dress-types -->
+                <div class="filter__dress__types d-flex flex-column m-24">
+                    <div class="dress__type d-flex flex-row justify-content-between">
+                        <p>T-Shirt</p>
+                        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                    </div>
+                    <div class="dress__type d-flex flex-row justify-content-between">
+                        <p>Shorts</p>
+                        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                    </div>
+                    <div class="dress__type d-flex flex-row justify-content-between">
+                        <p>Shirts</p>
+                        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                    </div>
+                    <div class="dress__type d-flex flex-row justify-content-between">
+                        <p>Hoodie</p>
+                        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                    </div>
+                    <div class="dress__type d-flex flex-row justify-content-between">
+                        <p>Jeans</p>
+                        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                    </div>
+                </div>
+                <div class="horizontalline m-24"></div>
+                <!-- price-section -->
+                <div class="filter__price__section m-24">
+                    <div class="filter__section__header d-flex
+                        justify-content-between">
+                        <p class="filter__heading__text">Price</p>
+                        <ion-icon name="chevron-up-outline"></ion-icon>
+                    </div>
+    
+                    <div class="range-container">
+                        <div class="slider"></div>
+                        <div class="progress">sd</div>
+                        <input type="range" class="range-input" min="0" max="300" value="50">
+                        <input type="range" class="range-input" min="0" max="300" value="200">
+                    </div>
+                    <div class="range-values d-flex justify-content-around">
+                        <p>$50</p>
+                        <p>$200</p>
+                    </div>
+                </div>
+                <div class="horizontalline "></div>
+                <!-- filter-color-section -->
+                <div class="filter__color__section m-24">
+                    <div class="filter__section__header d-flex
+                    justify-content-between">
+                        <p class="filter__heading__text">colors</p>
+                        <ion-icon name="chevron-up-outline"></ion-icon>
+                    </div>
+                    <div class="colors-container ">
+                        <div class="color_row d-flex">
+                            <div class="green"></div>
+                            <div class="red"></div>
+                            <div class="yellow"></div>
+                            <div class="orange"></div>
+                            <div class="skyblue"></div>
+                        </div>
+                        <div class="color_row d-flex">
+                            <div class="blue d-flex justify-content-center align-items-center"><ion-icon
+                                    name="checkmark"></ion-icon></div>
+                            <div class="purpule"></div>
+                            <div class="pink"></div>
+                            <div class="white"></div>
+                            <div class="black"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontalline m-24"></div>
+                <!-- filter-size-section -->
+                <div class="filter__size__section m-24">
+                    <div class="filter__section__header d-flex
+                    justify-content-between">
+                        <p class="filter__heading__text">Size</p>
+                        <ion-icon name="chevron-up-outline"></ion-icon>
+                    </div>
+                    <div class="size-btn m-24">
+                        <button class="fm-secondary-btn">XX-Small</button>
+                        <button class="fm-secondary-btn">X-Small</button>
+                        <button class="fm-secondary-btn small-btn">Small</button>
+                        <button class="fm-secondary-btn">Medium</button>
+                        <button class="fm-primary-btn small-btn">Large</button>
+                        <button class="fm-secondary-btn">X-Large</button>
+                        <button class="fm-secondary-btn">XX-Large</button>
+                        <button class="fm-secondary-btn">3X-Large</button>
+                        <button class="fm-secondary-btn">4X-Large</button>
+                    </div>
+                </div>
+                <div class="horizontalline m-24"></div>
+                <!-- dress__style -->
+                <div class="filter___style__section m-24">
+                    <div class="filter__section__header d-flex
+                    justify-content-between">
+                        <p class="filter__heading__text">Dress Style</p>
+                        <ion-icon name="chevron-up-outline"></ion-icon>
+                    </div>
+                    <div class="filter__dress__types d-flex flex-column m-24">
+                        <div class="dress__type d-flex flex-row justify-content-between">
+                            <p>Casual</p>
+                            <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                        </div>
+                        <div class="dress__type d-flex flex-row justify-content-between">
+                            <p>Formal</p>
+                            <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                        </div>
+                        <div class="dress__type d-flex flex-row justify-content-between">
+                            <p>Party</p>
+                            <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                        </div>
+                        <div class="dress__type d-flex flex-row justify-content-between">
+                            <p>Gym</p>
+                            <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="fm-primary-btn m-24">Apply Filter</button>
+            </section>
+            
+           
+
+            <!-- -----------------casual-dress-section--------------- -->
+            <section class="casual__dress__section ">
+                <!-- header -->
+                <div class="dress__section__header d-flex flex-row justify-content-between align-items-center">
+                    <h1>Casual</h1>
+                    <div class="header__text d-flex flex-row">
+                        <p>Showing 1-10 of 100 Products</p>
+                        <p class="popular__products"> Sort by: <span>Most Popular <ion-icon
+                                    name="chevron-down-outline"></ion-icon></span></p>
+                    </div>
+                    <button class="filter-button fm-secondary-btn" id="filter__btn">
+                            <img src="images/Vector (1).svg" alt="">
+                    </button>
+                </div>
+                <!-- main-section -->
+                <div class="dresses__container d-flex justify-content-center align-items-center">
+                    <div class="product__card ">
+                        <img src="images/image 8.svg" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Gradient Graphic T-shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <p>3.5/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$145
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <img src="images/image 9.svg" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Polo with Tipping Details</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <p>4.5/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$180
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 10.svg" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Black Striped T-shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <p>5.0/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$120
+                                <span>$150</span>
+                                <span class="discount">-30%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 7.png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Skinny Fit Jeans</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <p>3.5/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$240
+                                <span>$260</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 9.png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Checkered Shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <p>4.5/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$180
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 10.png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Sleeve Striped T-Shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <p>4.5/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$130
+                                <span>$160</span>
+                                <span class="discount">-30%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 7 (1).png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Vertical Striped Shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <p>5.0/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$212
+                                <span>$232</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 8 (1).png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Courage Graphic T-Shirt</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <p>4.0/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$145
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product__card ">
+                        <img src="images/image 9 (1).png" alt="">
+                        <div class="products__details">
+                            <p class="product__name">Loose Fit Bermuda Shorts</p>
+                            <div class="rating flex">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <p>4.0/<span>5</span></p>
+                            </div>
+                            <p class="product__price ">$80
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fm-container">
+                    <div class="horizontalline"></div>
+                </div>
+                <!-- footer -->
+                <div class="casual__footer__section d-flex justify-content-between">
+                    <button class="Previous__btn fm-clear-btn d-flex justify-content-center align-items-center">
+                        <ion-icon name="arrow-back-outline"></ion-icon>Previous
+                    </button>
+                    <div class="footer__pages d-flex">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>...</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>10</button>
+                    </div>
+                    <button class="Previous__btn fm-clear-btn d-flex justify-content-center align-items-center">
+                        Next<ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <!-- user-section -->
+        <section class="website__user__section fm-container d-flex justify-content-center">
+            <div class="row g-0">
+                <div class="col-lg-6 col-md-4 col-sm-12 user__left__content d-flex">
+                    <p>STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+                </div>
+                <div
+                    class="col-lg-6 col-md-8 col-sm-12 user__right__content d-flex flex-column align-items-center justify-content-center ">
+                    <div class="user__input d-flex flex-row align-items-center justify-content-center">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" placeholder="Enter your email address">
+                    </div>
+                    <button class="fm-secondary-btn text-center">Subscribe to Newsletter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer-section -->
+        <footer class="footer__section d-flex align-items-end">
+            <div class="footer__content row g-0 fm-container d-flex justify-content-between">
+                <div class="footer__header d-flex flex-column col-lg-3 col-md-12 col-sm-12">
+                    <div class="website__logo">
+                        <p>SHOP.CO</p>
+                    </div>
+                    <p class="footer__info fm-secondary-text">We have clothes that suits your style and which you're
+                        proud to wear. From women to men.</p>
+                    <div class="footer__icons d-flex">
+                        <a href="#"><ion-icon class="rounded-circle" name="logo-twitter" id="twitter"></ion-icon></a>
+                        <a href="#"><ion-icon class="rounded-circle" name="logo-facebook" id="facebook"></ion-icon></a>
+                        <a href="#"><ion-icon class="rounded-circle" name="logo-instagram"
+                                id="instagram"></ion-icon></a>
+                        <a href="#"><ion-icon class="rounded-circle" name="logo-github" id="github"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer__link__section col-6 col-lg-2 col-md-6 col-sm-6 ">
+                    <p>COMPANY</p>
+                    <div class="footer__links d-flex flex-column">
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Works</a>
+                        <a href="#">Career</a>
+                    </div>
+                </div>
+                <div class="footer__link__section col-6 col-lg-2 col-md-6 col-sm-6">
+                    <p>HELP</p>
+                    <div class="footer__links d-flex flex-column">
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Terms & Condition</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer__link__section col-6 col-lg-2 col-md-6 col-sm-6">
+                    <p>FAQ</p>
+                    <div class="footer__links d-flex flex-column">
+                        <a href="#">Account</a>
+                        <a href="#">Manage Deliveries</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Payments</a>
+                    </div>
+
+                </div>
+                <div class="footer__link__section col-6 col-lg-2 col-md-6 col-sm-6">
+                    <p>RESOURCES</p>
+                    <div class="footer__links d-flex flex-column">
+                        <a href="#">Free eBooks</a>
+                        <a href="#">Development Tutorial</a>
+                        <a href="#">How to -Blog</a>
+                        <a href="#">Youtube Playlist</a>
+                    </div>
+
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="sub-footer d-flex flex-row justify-content-lg-between">
+                    <p class="fm-secondary-text text-center">shop.co &copy; 2000-2023,All Rights Reserved</p>
+                    <div class="sub-footer__icons d-flex flex-row justify-content-center align-items-center">
+                        <div class="d-flex sub-footer-img justify-content-center align-items-center">
+                            <img src="images/Visa.svg" alt="">
+                        </div>
+                        <div class="d-flex sub-footer-img justify-content-center align-items-center"> 
+                            <img src="images/Mastercard.svg" alt="">
+                        </div>
+                        <div class="d-flex sub-footer-img justify-content-center align-items-center">
+                            <img src="images/Paypal.svg" alt="">
+                        </div>
+                        <div class="d-flex sub-footer-img justify-content-center align-items-center"> 
+                            <img src="images/ Pay.svg" alt="">
+                        </div>
+                        <div class="d-flex sub-footer-img justify-content-center align-items-center">
+                            <img src="images/G Pay.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+
+
+    <script>
+        const filterbutton = document.getElementById('filter__btn');
+        const filtersection = document.getElementById('filter__sec')
+        const cross = document.getElementById('cross')
+        filterbutton.addEventListener('click', () => {
+            filtersection.classList.toggle('toggle');
+        });
+        cross.addEventListener('click',()=>{
+            filtersection.classList.remove('toggle');
+        })
+    </script>
+    <script src="togglebtn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

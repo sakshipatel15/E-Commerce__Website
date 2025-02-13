@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.horizontalline{
+        border: 1px solid var(--line-color);
+        width: 100%;
+        height: 0.1px !important;
+        margin-inline: auto;
+        height: 2vh;
+}
+
+/* hero-section */
+.hero-content{
+    height: fit-content;
+    margin-top: 24px;
+    .breadcrumb{
+        height: fit-content;
+        margin: 0px;
+        justify-content: flex-start;
+        gap: 12px;
+        p{
+            color: var(--primary-text-color);
+            font-size: 16px;
+            line-height: 21.6px;
+        }
+        span{
+            color: var(--body--color)  ;
+            line-height: 21.6px;
+        }
+    }
+    .hero__main__content{
+        margin-top: 5px;
+    }
+    .left__hero__content{
+        gap: 14px;
+        .product__view{
+            gap: 18px;
+            img{
+                width: 152px;
+                height: 168px;
+                border-radius: 20px !important;
+            }
+        }
+        .product__preview img{
+            width:444px ;
+            height: 545px;
+            border-radius: 20px !important;
+        }
+    }
+    .t-shirt-front-view{
+        border: 1px solid black;
+    }
+    .right__hero__content{
+        margin: 0px ;
+        padding-left: 30px;
+        .fm-main-text{
+            margin: 0px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            color: var(--body--color);
+        }
+        .rating{
+            margin-top: 14px !important;
+            ion-icon{
+                font-size:2.5rem ;
+            }
+            p{
+                font-size:16px !important;
+        }
+    } 
+    .fm-secondary-text{
+        margin: 0px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hero__colors{
+        margin-top: 24px;
+        .colors{
+            margin-top: 16px;
+            gap: 16px;
+            .brown_color,.green_color,.blue_color{
+                height: 37px;
+                width: 37px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .brown_color{
+                background-color: var(--brown-color);
+                color: var(--secondary-color);
+                font-size: 1.2rem;
+            }
+            .green_color{
+                background-color: var(--darkgreen-color);
+            }
+            .blue_color{
+                background-color: var(--blue-color);
+            }
+        }
+    }
+    .horizontalline{
+        margin-top: 24px;
+    }
+    .hero-size{
+        margin-top: 24px;
+    }
+    .size-btn{
+        margin-top: 12px;
+        gap: 12px;
+        .small-btn,.large-btn{
+            width: 86px;
+            height: 46px;
+            border: none;
+            cursor: pointer;
+        }
+        .medium-btn,.xlarge-btn{
+            height: 46px;
+            width: 105px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .cart-btn{
+        margin-top: 20px;
+        gap: 20px;
+        .add-item-btn{
+            width: 170px;
+            height: 52px;
+            color: var(--body--color);
+            font-size: 1.2rem;
+            ion-icon{
+                font-size: 2rem;
+            }
+        }
+        .add-btn{
+            width: 400px;
+            height: 52px;
+        }
+    }
+    .fm-secondary-btn,.fm-primary-btn{
+        font-size: 16px;
+    }
+}
+}
+
+
+/* reviews-header */
+.reviews {
+    margin-top: 40px;
+    text-align: center;
+
+.reviews__tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 2px solid var(--line-color);
+}
+
+.reviews__tabs a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--primary-text-color);
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.reviews__tabs a:hover {
+    color: var(--body--color);
+}
+
+.reviews__tabs--active a {
+    font-weight: bold;
+    color: var(--body--color);
+    border-bottom: 3px solid black;
+}
+
+.horizontalline {
+    margin-top: 24px;
+}
+.review-container{
+    margin-top: 24px;
+    padding: 0px !important;
+    p{
+        margin: 32px 0px;
+        font-size:24px ;
+        font-weight:700 ;
+        line-height: 30px;
+        color: var(--body--color);
+    }
+    span{
+        font-size: 16px ;
+        font-weight:400 ;
+        line-height: 22px;
+        color: var(--primary-text-color);
+    }
+    .review-btns{
+        gap: 10px;
+        .filter-button{
+            height: 55px;
+            width: 55px;
+            border: none;
+        }
+        .sort-button{
+            border: none;
+            padding: 16px 20px;
+            .dropdown a{
+                background:transparent !important;
+                border: none;
+                color: black;
+                padding: 0;
+            }
+        }
+        .review-button {
+            padding: 16px 20px;
+        }
+    }
+}
+}
+
+/* rating and review section */
+.rating__and__review{
+    margin-top: 24px;
+    .rating__review__section{
+        padding-right: 0px;
+        grid-auto-flow: 20px;
+        justify-content: center !important;
+    }
+    .info__card{
+        flex-direction: column !important;
+        /* background-color: aqua; */
+        p{
+            width: 95%;
+        }
+    }
+    .rating{
+        margin-top: 0px;
+    }
+    .card__info__icon{
+        ion-icon{
+            font-size: 25px;
+            color: var(--info-icon-color);
+            cursor: pointer;
+        }
+    }
+    .card__footer{
+        color: var(--primary-text-color);
+        font-weight:500 ;
+    }
+    .rating__left__section,.rating__right__section{
+        flex-direction: column !important;
+        gap: 20px;
+        /* background-color: aquamarine; */
+    }
+    button{
+        margin-top: 36.42px;
+        width: 230px;
+        height: 52px;
+    }
+}

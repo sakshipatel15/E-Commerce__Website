@@ -1,0 +1,181 @@
+@media screen and (max-width:1225px){
+    .left__hero__content{
+        flex-direction: column-reverse !important;
+        height: fit-content;
+        .product__view{
+            flex-direction: row !important;
+            img{
+                object-fit: cover;
+                width: 111px !important;
+                height: 106px !important;
+            }
+            
+        }
+        .product__preview{
+            img{
+                object-fit: cover;
+                width: 358px !important;
+                
+            }
+        }
+    }
+    .size-btn{
+        gap: 8px !important;
+        .small-btn,.large-btn{
+            width: 74px !important;
+            height: 39px !important;
+        }
+        .medium-btn,.xlarge-btn{
+            height: 39px !important;
+            width: 90px !important;
+        }
+    }
+    .info__card{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width:769px){
+    .right__hero__content{
+        padding-left: 16px !important;
+        margin-top: 20px !important;
+    }
+    .rating__right__section{
+        display: none !important;
+    }
+    .sort-button{
+        display: none !important;
+    }
+    .review-container{
+        margin-top: 26px;
+        p{
+            font-size:20px !important ;
+            line-height: 27px;
+        }
+        span{
+            font-size: 14px ;
+        }
+        .filter-button{
+            height: 40px !important;
+            width: 40px !important;
+        }
+        .review-button{
+            height: 40px !important;
+           padding: 0px  7px !important;
+    }
+}
+}
+@media screen and (max-width:481px){
+    .fm-secondary-btn,.fm-primary-btn{
+        font-size: 14px;
+    }
+    .product__preview img{
+        height: 290px !important;
+    }
+    .left__hero__content{
+        gap: 12px !important;
+        .product__view{
+            gap: 12px !important;
+        }
+    }
+    .right__hero__content{
+        .fm-main-text{
+            font-size: 24px !important;
+            line-height: 28px !important;
+        }
+        .rating{
+            p{
+                font-size:14px !important;
+            }
+    }
+
+    .fm-secondary-text{
+        line-height: 20px !important;
+    }
+    .product__price{
+        font-size: 24px !important;
+    .discount{
+        font-size:14px ;
+        font-weight:500 ;
+        padding: 12px 6px !important;
+    }
+    }
+    .size-btn{
+        .small-btn,.large-btn{
+            width: 74px !important;
+            height: 39px !important;
+        }
+        .medium-btn,.xlarge-btn{
+            height: 39px !important;
+            width: 84px !important;
+        }
+    }
+    .cart-btn{
+        .add-item-btn{
+            width: 110px !important;
+            height: 44px !important;
+            font-size: 14px !important;
+            ion-icon{
+                font-size: 1.2rem !important;
+            }
+        }
+        .add-btn{
+            width: 236px !important;
+            height: 44px !important;
+        }
+    }
+    .product__price{
+            margin-top: 12px !important;
+        }
+    }
+    .info__card{
+        min-width: 59% !important;
+        .customer__name{
+            margin: 5px 0px 0px 0px ;
+        }
+        p{
+            margin-top: 10px 0px 0px 0px;
+        }
+        .card__footer{
+            margin: 1px 0px 0px 0px;
+        }
+    }
+    .reviews__tabs a {
+        font-size: 15px !important;
+    }
+}
+@media screen and (max-width:400px){
+    .product__view{
+        max-width: 100%;
+        img{
+            max-width: 100% !important;
+        }
+    }
+    .product__preview{
+        img{
+            width: 100% !important;
+        }
+    }
+    .reviews__tabs a {
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width:375px){
+    .size-btn{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .review-container{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 10px;
+        p{
+            margin: 0px !important;
+        }
+}
+}
+@media screen and (max-width:265px){
+   .rating__review__section{
+    min-width: 100% !important;
+   }
+}

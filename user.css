@@ -1,0 +1,174 @@
+/* website-user-section */
+.website__user__section{
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+    right: 10%;
+    margin-top: 81.42px;
+    background-color: var(--body-color);
+    border-radius: 20px;
+    padding-inline: 64px;
+    .user__left__content{
+        /* background-color: aqua; */
+        padding-block: 43px;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+    }
+    .user__right__content{
+        /* background-color: brown; */
+        align-items: flex-end !important;
+        padding-block: 36px;
+        gap: 14px;
+        .user__input{
+        border-radius: 62px;
+        width:349px;
+        height: 48px;
+        background-color: var(--secondary-color);
+        gap: 12px;
+        padding: 14px 17.87px;
+        ion-icon{
+            font-size: 2rem;
+            color: var(--primary-text-color);
+        }
+        input{
+            height: 25px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 400;
+            background: none;
+        }
+    }
+    .fm-secondary-btn{
+        width:349px;
+        height: 46px;
+        color: var(--body-color);
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background-color: var(--secondary-color);
+    }
+}
+}
+@media screen and (max-width:1142px) {
+    .website__user__section{
+        .user__left__content{
+            padding-block: 2px;
+            p{
+                font-size: 32px;
+            }
+        }
+    }
+}
+@media screen and (max-width:938px) {
+    .website__user__section{
+        .user__left__content{
+            text-align: start !important;
+            padding-block: 4px !important;
+            padding-inline: 22px !important;
+        }
+        .user__right__content{
+            align-items: center !important;
+            justify-content: center !important;
+            padding-block: 4px;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .website__user__section{
+        left: 4%;
+        right: 5%;
+        max-width: 100%;
+        margin-top: 49px;
+        padding: 32px 28px;
+        .user__left__content{
+            p{
+                font-size: 32px;
+                line-height: 30px;
+            }
+        }
+        .user__right__content{
+            .user__input{
+                width: 90%;
+                ion-icon{
+                    font-size: 15px;
+                }
+                input{
+                    font-size: 14px;
+                }
+                
+            }
+            .fm-secondary-btn{
+                width: 90%;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .website__user__section{
+        /* max-width: 80%; */
+        .user__left__content{
+            max-width: 100%;
+        }
+        .user__right__content{
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width:323px){
+    .website__user__section{
+        .user__left__content{
+            p{
+                font-size: 20px;
+                word-break: break-all;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:318px){
+    .website__user__section{
+        height: fit-content;
+        left: 0% !important;
+        right: 0% !important;
+        .user__left__content{
+            max-width: 90% !important;
+            margin-inline: auto !important;
+            padding-inline: 20px;
+            width: fit-content;
+            p{
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .user__right__content{
+            max-width: 90% !important;
+            margin-inline: auto !important;
+            .user__input{
+                width: 90%;
+                input{
+                    padding-left: 20px;
+                }
+            }
+            .fm-secondary-btn{
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width:281px) {
+    .website__user__section{
+            scale: 0.8;
+        
+    }
+    input{
+        scale: 0.9;
+    }
+}

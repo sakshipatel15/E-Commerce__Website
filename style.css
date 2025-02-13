@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+
+/* hero-section */
+.hero__section{
+    height: 663px;
+    background-color:var(--accent-color);
+    background: url(images/Rectangle\ 2.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero__left__content{
+    height: fit-content;
+    font-family: 'inter',sans-serif;
+    /* padding-top: 103px; */
+    z-index: 1;
+    .hero__text{
+        width: 577px;
+        height: 181px;
+        h1{
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: 700;
+            color: var(--body-color);
+        }
+    }
+    p{
+        width: 545px;
+        margin-top: 32px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--primary-text-color);
+    }
+    button{
+        width: 210px;
+        height: 52px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 32px;
+    }
+}
+.hero__desc{        
+    gap: 32px;
+    height: 74px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.hero__desc__info{
+    height: 74px !important;
+    h1{
+        color: var(--body-color);
+        font-size: 40px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0px;
+    }
+}
+.hero__right__content{
+    img{
+        z-index: 0;
+        display: none;
+        height: fit-content;
+        /* width: 517px; */
+        /* min-width:100vw ; */
+        width: 100% !important;
+        object-fit: cover;
+        position: relative;
+    }
+}
+
+/* company-section */
+.company__section .fm-container{
+    padding-block: 24px;
+    position: sticky;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+
+/* products__section */
+.company__products{
+    margin-top: 74px;
+    button{
+        margin-top: 52px;
+        place-content: center;
+        width: 218px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+.product__section{
+    padding-inline: 14px;
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x:scroll;
+    white-space:normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    .products__container{
+    gap: 20px;
+    direction: ltr;
+    text-align:left;
+}
+    .product__card{
+        float: left;
+        clear: left;
+        max-width: 50%; 
+        img{
+            min-width: 295px;
+            max-width: 295px;
+            height: 298px;
+            border-radius: 20px;
+         }
+    }
+}
+.product__section::-webkit-scrollbar {
+    display: none; 
+}
+
+
+/* dress_section */
+.dress__section{
+margin-top: 80px;
+flex-wrap: wrap;
+.fm-container{
+    gap: 20px !important;
+}
+h1{
+    margin-block: 70px;
+}
+.dress__content{
+    margin: 0px 70px 70px 70px;
+}
+.dress__container{
+background-color: var(--accent-color);
+border-radius: 40px;
+margin-inline: 18px;
+}
+.small__img{
+    width: 414px !important;
+    img{
+        width: 400px;
+    }
+}
+.big__img{
+    width: 684px !important;
+    img{
+        width: 670px;
+    }
+}
+.row1{
+    margin-top:14px ;
+}
+}
+
+
+
+/* customer-section */
+.customer__section {
+    z-index: 1;
+    height: fit-content;
+    margin-top: 80px;
+    position: relative; 
+    .c-section-arrow-icons{
+        gap: 18.62px;
+        font-size: 24px;
+        color: var(--body-color);
+        cursor: pointer;
+    } 
+}
+.customer__info {
+    margin-top: 40px;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    gap: 20px;
+    position: relative;
+    scroll-behavior: smooth;  
+}
+.customer__info::-webkit-scrollbar {
+    display: none; 
+}
+.customer__section::before,
+.customer__section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    pointer-events: none; 
+    z-index: 1;
+    transition: opacity 0.3s ease; 
+}
+.customer__section::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+.customer__section::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
